@@ -1,0 +1,142 @@
+// Typography
+// .font-size-base{
+// 	font-size: $font-size-base-mobile;
+// 	line-height: $line-height-base-mobile;
+// 	@include media('>=tablet') {
+// 		font-size: $font-size-base-desktop;
+// 		line-height: $line-height-base-desktop;
+// 	}
+// }
+
+// .font-size-small{
+// 	font-size: 10px;
+// 	line-height: 1.3;
+// }
+
+.font-size-subheading{
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 0.031em;
+	line-height: 13px;
+	text-transform: uppercase;
+	@include media('>=tablet') {
+		font-size: 14px;
+		letter-spacing: 0.043em;
+		line-height: 19px;
+	}
+}
+
+.font-size-navigation{
+	font-size: 6px;
+	letter-spacing: 0.02em;
+	line-height: 8px;
+	text-transform: uppercase;
+	@include media('>=tablet') {
+		font-size: 10px;
+		line-height: 13px;
+	}
+}
+
+.font-size-subcopy{
+	font-size: 10px;
+	line-height: 13px;
+	@include media('>=tablet') {
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
+
+.font-size-price{
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	@include media('>=tablet') {
+		font-size: 16px;
+		line-height: 21px;
+	}
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+	color: $color-system-black;
+	font-family: 'Sneakers Script', $base-font-family;
+	font-weight: 500;
+}
+
+h1,
+.h1 {
+	font-size: $h1-font-size-mobile;
+	line-height: $h1-line-height-mobile;
+	@include media('>=tablet') {
+		font-size: $h1-font-size-desktop;
+		line-height: $h1-line-height-desktop;
+	}
+}
+
+h2,
+.h2 {
+	font-size: $h2-font-size-mobile;
+	line-height: $h2-line-height-mobile;
+	@include media('>=tablet') {
+		font-size: $h2-font-size-desktop;
+		line-height: $h2-line-height-desktop;
+	}
+}
+
+h3,
+.h3 {
+	font-size: $h3-font-size-mobile;
+	line-height: $h3-line-height-mobile;
+	@include media('>=tablet') {
+		font-size: $h3-font-size-desktop;
+		line-height: $h3-line-height-desktop;
+	}
+}
+
+h4,
+.h4 {
+	font-size: $h4-font-size-mobile;
+	line-height: $h4-line-height-mobile;
+	@include media('>=tablet') {
+		font-size: $h4-font-size-desktop;
+		line-height: $h4-line-height-desktop;
+	}
+}
+
+/*h5,
+.h5 {
+	font-size: $h1-font-size-mobile;
+	line-height: $h1-line-height-mobile;
+	@include media('>=tablet') {
+		font-size: $h1-font-size-desktop;
+		line-height: $h1-line-height-desktop;
+	}
+}
+
+h6,
+.h6 {
+	font-size: $h1-font-size-mobile;
+	line-height: $h1-line-height-mobile;
+	@include media('>=tablet') {
+		font-size: $h1-font-size-desktop;
+		line-height: $h1-line-height-desktop;
+	}
+}*/
+
+p {
+	margin: 0 0 1em;
+}
+
+a {
+	// color: $base-link-color;
+	
+	&:hover {
+		text-decoration: none;
+		// color: $base-link-hover-color;
+	}
+}

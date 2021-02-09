@@ -1,0 +1,33 @@
+.accordion{
+	border-top: 1px solid #979797;
+	@extend %listreset;
+	li{
+		border-bottom: 1px solid #979797;
+	}
+	.opener{
+		color: $color-system-black;
+		display: block;
+		padding: 10px 10px 11px;
+		position: relative;
+		text-decoration: none;
+		&:before {
+			background: url('images/IndividualIconsPage_WhiteOutline_Plus copy.png');
+			background-size: cover;
+			content: '';
+			height: 13px;
+			position: absolute;
+			right: 5px;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 13px;
+			@include media('>=tablet') {
+				height: 16px;
+				width: 16px;
+			}
+		}
+	}
+	.slide{
+		display: none;
+		padding: 10px 10px 11px;
+	}
+}
