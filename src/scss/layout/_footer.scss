@@ -1,3 +1,134 @@
-#footer {
-	
+#footer{
+	background: $color-system-black;
+	color: $color-system-white;
+}
+
+.section-newsletter{
+	background: #E6E6E6;
+	border-top: 1px solid $color-system-black;
+	color: $color-system-black;
+	padding: 20px 0 30px;
+	text-align: center;
+	> .container{
+		@include media('>=tablet') {
+			max-width: 660px;
+		}
+	}
+	.icon{
+		display: block;
+		margin: 0 auto 23px;
+	}
+	h2{
+		margin: 0 0 10px;
+	}
+	p{
+		margin: 0 0 23px;
+	}
+}
+
+.form-newsletter{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+	.btn{
+		border-left-width: 0;
+		min-width: 96px;
+	}
+}
+
+.section-socials-icons{
+	// border-bottom: 2px solid $color-system-white;
+	padding: 10px 0 11px;
+	ul{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-content: center;
+		align-items: center;
+		@extend %listreset;
+		li{
+			padding: 0 10px;
+		}
+	}
+}
+
+.section-footer-content{
+	background: $color-system-white;
+	color: $color-system-black;
+	.bottom-content{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-content: flex-start;
+		align-items: flex-start;
+		padding: 10px 0 20px;
+	}
+}
+
+.payments-method-list{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+	padding: 10px 0 11px;
+	@extend %listreset;
+	li{
+		padding: 2px;
+	}
+	a{
+		background: #B3B3B3;
+		border-radius: 7px;
+		display: inline-block;
+		vertical-align: top;
+		height: 13px;
+		width: 33px;
+	}
+}
+
+.copy{
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.footer-nav{
+	display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+	// text-transform: uppercase;
+	@extend %listreset;
+	li{
+		margin: 0 0 0 4px;
+		padding: 0 0 0 4px;
+		position: relative;
+		&:first-child{
+			margin: 0;
+			padding: 0;
+			&:before {
+				display: none;
+			}
+		}
+		&:before {
+			background: $color-system-black;
+			content: '';
+			height: 6px;
+			left: 0;
+			position: absolute;
+			top: 0;
+			// transform: translateY(-50%);
+			width: 1px;
+		}
+	}
+	a{
+		text-decoration: none;
+	}
 }

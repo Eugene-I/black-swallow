@@ -7,7 +7,7 @@ fieldset {
 	border-style: none;
 }
 
-label{
+label {
 	display: inline-block;
 	vertical-align: top;
 	margin: 0 0 10px;
@@ -37,16 +37,16 @@ textarea {
 	outline: none;
 	padding: 9px 11px;
 	width: 100%;
-	@include media('>=tablet') {
+	@include media(">=tablet") {
 		font-size: 14px;
 		height: 50px;
 		line-height: 17px;
 		padding: 15px 11px 16px;
 	}
 	@include placeholder {
-		color: #C3C3C3;
+		color: #c3c3c3;
 	}
-	
+
 	// &:focus {
 	// 	border-color: $form-element-focus-border-color;
 	// }
@@ -54,7 +54,7 @@ textarea {
 
 select {
 	-webkit-border-radius: 0;
-	
+
 	.hideme {
 		display: none;
 	}
@@ -68,19 +68,96 @@ textarea {
 }
 
 button,
-input[type='button'],
-input[type='reset'],
-input[type='file'],
-input[type='submit'] {
+input[type="button"],
+input[type="reset"],
+input[type="file"],
+input[type="submit"] {
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 	cursor: pointer;
 }
 
 input[type="number"] {
+	-webkit-appearance: textfield;
+	-moz-appearance: textfield;
 	appearance: textfield;
-	&::-webkit-inner-spin-button, 
-	&::-webkit-outer-spin-button { 
+	&::-webkit-inner-spin-button,
+	&::-webkit-outer-spin-button {
 		-webkit-appearance: none;
 	}
 }
+
+.number-input {
+	border: 1px solid $color-system-black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: stretch;
+	align-items: stretch;
+	width: 54px;
+	@include media('>=tablet') {
+		width: 84px;
+	}
+	button {
+		background: url('images/IndividualIconsPage_WhiteOutline_Plus-black.png') 50% 50% no-repeat;
+		background-size: 50% auto;
+		align-items: center;
+		-webkit-appearance: none;
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		justify-content: center;
+		// height: 3rem;
+		margin: 0;
+		outline: none;
+		position: relative;
+		@include media('>=tablet') {
+			max-width: 28px;
+			min-width: 28px;
+		}
+	}
+	input[type="number"] {
+		border: solid $color-system-black;
+		border-width: 0 1px;
+		flex-grow: 1;
+		min-width: 0;
+		padding: 2px 2px 3px;
+		text-align: center;
+		@extend .font-size-subheading;
+		@include media('>=tablet') {
+			padding: 3px 3px 4px;
+		}
+		+ button{
+			background-image: url('images/IndividualIconsPage_WhiteOutline_Minus-black.png');
+		}
+	}
+}
+
+/*
+.number-input button:before,
+.number-input button:after {
+	display: inline-block;
+	position: absolute;
+	content: "";
+	width: 1rem;
+	height: 2px;
+	background-color: #212121;
+	transform: translate(-50%, -50%);
+}
+.number-input button.plus:after {
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type="number"] {
+	font-family: sans-serif;
+	max-width: 5rem;
+	padding: 0.5rem;
+	border: solid #ddd;
+	border-width: 0 2px;
+	font-size: 2rem;
+	height: 3rem;
+	font-weight: bold;
+	text-align: center;
+}
+*/

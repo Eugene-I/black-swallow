@@ -21,6 +21,8 @@ $media-expressions: (
 
 @import 'vendors/include-media';
 @import 'vendors/normalize';
+@import 'vendors/mCustomScrollbar/jquery.mCustomScrollbar.min';
+@import 'vendors/slick/slick';
 
 @import 'base/fonts';
 @import 'base/variables';
@@ -31,9 +33,11 @@ $media-expressions: (
 
 @import 'base/elements/buttons';
 @import 'base/elements/accordion';
+@import 'base/elements/category-box';
 @import 'base/forms';
 
 
-// @import 'layout/header';
+@import 'layout/header';
 @import 'layout/common';
-// @import 'layout/footer';
+@import 'layout/single-blog';
+@import 'layout/footer';

@@ -1,0 +1,65 @@
+extends pug/extends/master
+
+block content
+	section.section-pages-nav 
+		.container 
+			a(href="#").btn.btn-pages-nav black swallow blog
+	section.section-single-post
+		.container
+			.twocolumns-content 
+				.aside-holder
+					aside#aside
+						h1 blog
+						ul.accordion
+							li
+								a(href="#").opener.font-size-subheading Sub-Category
+								.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+							li
+								a(href="#").opener.font-size-subheading Size
+								.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+							li
+								a(href="#").opener.font-size-subheading Colour
+								.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+							li
+								a(href="#").opener.font-size-subheading brand
+								.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+							li
+								a(href="#").opener.font-size-subheading Accordion option
+								.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+							li
+								a(href="#").opener.font-size-subheading Accordion option
+								.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+							li
+								a(href="#").opener.font-size-subheading Accordion option
+								.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+							li
+								a(href="#").opener.font-size-subheading Accordion option
+								.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+				.content-holder
+					article#content
+						.post-media-holder
+							img(src="https://via.placeholder.com/1097x508", width="1097", height="508", alt="Image description") 
+						ul.tags-cloud
+							li
+								a(href="#").font-size-subheading tag
+						h2.post-title.font-size-subheading Blog Article Name
+						time(datetime="2021-01-13").post-date.font-size-subcopy January 13, 2021
+						p Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type
+						p Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type
+						p Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type
+						.recent-posts-subsection
+							h2 recent posts
+							ul.recent-posts-list
+								li
+									.recent-single-post
+										.post-media-holder
+											img(src="https://via.placeholder.com/299x139", width="299", height="139", alt="Image description") 
+										ul.tags-cloud
+											li
+												a(href="#").font-size-subheading tag
+										h3.font-size-subheading Blog Article Name
+										time(datetime="2021-01-13").post-date.font-size-subcopy January 13, 2021
+										p Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type something Type 
+										.buttons-grid.vertical
+											div 
+												a(href="#").btn read more

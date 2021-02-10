@@ -1,1 +1,42 @@
-header#header header
+header#header
+	.container.container-fluid
+		.mobile-nav-holder 
+			a(href="#").mobile-nav-opener
+		.logo-holder
+			strong.header-logo
+				a(href="./")
+					img(src="images/logo.svg", width="117", height="20", alt="BLACK SWALLOW") 
+			nav#desktop-nav
+				ul.font-size-subheading
+					li
+						a(href="#") New
+					li
+						a(href="#") makeup
+					li
+						a(href="#") hair
+					li
+						a(href="#") skincare
+					li
+						a(href="#") bikinis
+					li
+						a(href="#") brands
+					li
+						a(href="#") fragrance
+					li
+						a(href="#") accessories
+					li
+						a(href="#") by black swallow
+		.user-panel-holder
+			form(action="#").form-search.desktop search
+			.currency-selector AUD $
+			ul.user-nav
+				li
+					a(href="#").user-wishlist
+				li
+					a(href="#").user-profile
+				//- 
+				li
+					a(href="#").user-cart
+	.container.mobile-search-holder
+		form(action="#").form-search
+			input(type="text", placeholder="Search")

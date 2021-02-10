@@ -1,3 +1,37 @@
+.buttons-grid {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+	margin: -5px;
+	&.vertical {
+		flex-direction: column;
+		align-content: stretch;
+    	align-items: stretch;
+		.btn{
+			display: block;
+		}
+	}
+	&.center {
+		justify-content: center;
+	}
+	> div{
+		padding: 5px;
+		position: relative;
+	}
+	.color-selector-dropdown{
+		border-bottom-width: 0;
+		bottom: calc(100% - 5px);
+		display: none;
+		left: 5px;
+		position: absolute;
+		right: 5px;
+		z-index: 10;
+	}
+}
+
 .btn{
 	background: $color-yellow;
 	border: 1px solid $color-system-black;
@@ -16,5 +50,8 @@
 		font-size: 14px;
 		line-height: 19px;
 		padding: 14px 15px 15px;
+	}
+	&:hover {
+		text-decoration: none;
 	}
 }

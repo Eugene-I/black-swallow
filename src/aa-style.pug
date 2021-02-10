@@ -1,0 +1,125 @@
+extends pug/extends/master
+
+block content
+	.container
+		h1 Lorem, ipsum.
+		h2 Lorem, ipsum.
+		h3 Lorem, ipsum.
+		h4 Lorem, ipsum.
+		ul.products-cards-grid
+			li 
+				.product-card
+					.product-card__header
+						div
+							a(href="#").add-to-wish
+					.product-card__media-holder
+					.product-card__content 
+						h3
+							a(href="#") Makeup revolution
+						p Conceal &amp; Glow
+						span.price.font-size-price
+							span.old-price $17.00
+							| &nbsp;
+							span.new-price $8.50
+						.variants.font-size-small 20 Colours
+							img(src="images/product-variant-colors.png", width="20", height="8", alt="Image description") 
+					.product-card__footer 
+						.buttons-grid.buttons-grid--vertical
+							div
+								a(href="#").btn add to bag
+								.color-selector-dropdown.custom-scrollbar
+									ul 
+										li 
+											a(href="#").font-size-subheading col 5
+												span.example
+										li 
+											a(href="#").font-size-subheading col 5
+												span.example
+										li 
+											a(href="#").font-size-subheading col 5
+												span.example
+										li 
+											a(href="#").font-size-subheading col 5
+												span.example
+										li 
+											a(href="#").font-size-subheading col 5
+												span.example
+										li 
+											a(href="#").font-size-subheading col 5
+												span.example
+										li 
+											a(href="#").font-size-subheading col 5
+												span.example
+										li 
+											a(href="#").font-size-subheading col 5
+												span.example
+			li 
+				.product-card
+					.product-card__header
+						div
+							a(href="#").add-to-wish
+					.product-card__media-holder
+						.counter.counter--compact.font-size-subheading
+							.date 12
+								br
+								| dec
+							.counter__timer 05d 18h 53m 49s
+					.product-card__content 
+						h3
+							a(href="#") Makeup revolution
+						p Conceal &amp; Glow
+						span.price.font-size-price $17.00
+						.variants.font-size-small 20 Colours
+							img(src="images/product-variant-colors.png", width="20", height="8", alt="Image description") 
+					.product-card__footer 
+						.buttons-grid.buttons-grid--vertical
+							div
+								a(href="#").btn add to bag
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		strong.font-size-subheading Lorem ipsum dolor sit amet.
+		p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, excepturi tempore reiciendis quia sunt repellendus odit libero totam facilis vel?
+		p
+			form(action="#")
+				.form-group
+					label(for="") Name*
+					input(type="text", placeholder="Name*")
+				.form-group
+					.number-input
+						button(onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+						input.quantity(min='0' name='quantity' value='1' type='number')
+						button.plus(onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+		p
+			a(href="#").btn checkout
+		p
+			a(href="#").btn continue shopping
+		p
+			a(href="#").btn forgot password
+		ul.accordion
+			li
+				a(href="#").opener.font-size-subheading description
+				.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+			li
+				a(href="#").opener.font-size-subheading shipping
+				.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+			li
+				a(href="#").opener.font-size-subheading returns
+				.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.
+			li
+				a(href="#").opener.font-size-subheading sizing
+				.slide Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt vero suscipit accusantium natus assumenda eveniet quaerat mollitia. Deserunt, fugit tempora.

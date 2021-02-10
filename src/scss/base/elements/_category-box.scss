@@ -1,0 +1,44 @@
+.category-single-box{
+	border: 1px solid $color-system-black;
+	.category-single-box-media-holder{
+		height: 145px;
+		img{
+			height: 100%;
+			// max-height: 100%;
+			max-width: none;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+	.category-single-box-title{
+		border-top: 1px solid $color-system-black;
+		margin: 0;
+		text-align: center;
+		a{
+			display: block;
+			padding: 10px 10px 11px;
+		}
+	}
+}
+
+.brand-single-box{
+	.brand-single-box-media-holder{
+		height: 77px;
+		// width: 95px;
+		img{
+			height: 100%;
+			// max-height: 100%;
+			max-width: none;
+			object-fit: cover;
+			width: 100%;
+		}
+	}
+}
+
+.instagram-single-box{
+	.instagram-single-box-media-holder{
+		border: 1px solid $color-system-black;
+		// height: 120px;
+		// width: 120px;
+	}
+}
