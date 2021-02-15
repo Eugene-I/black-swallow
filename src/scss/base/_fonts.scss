@@ -8,26 +8,26 @@
 
 @font-face {
 	font-family: 'Atten New';
-	src: url('fonts/AttenNewRegular.woff') format('woff');
+	src: url('assets/AttenNewRegular.woff') format('woff');
 	font-style: normal;
 	font-weight: normal;
 }
 
 @font-face {
 	font-family: 'Atten New';
+	src: url('assets/AttenNewBold.woff') format('woff');
 	font-style: normal;
 	font-weight: bold;
-	src: url('fonts/AttenNewBold.woff') format('woff');
 }
 
 @font-face {
-	font-family: 'Sneakers Script';
-	font-style: normal;
-	font-weight: 500;
-	src: url('fonts/Sneakers-Script-Medium.ttf') format('truetype');
+    font-family: 'Sneakers Script';
+    src: url('assets/sneakers-script-medium.woff2') format('woff2'),
+         url('assets/sneakers-script-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 
-	
 
 // @font-face {
 // 	font-family: 'Atten New Regular Italic';

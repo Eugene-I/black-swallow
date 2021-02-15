@@ -39,7 +39,7 @@
 }
 
 .mobile-nav-opener{
-	background: url('images/IndividualIconsPage_WhiteOutline_Hamburger.png') 50% 50% no-repeat;
+	background: url('assets/IndividualIconsPage_WhiteOutline_Hamburger.png') 50% 50% no-repeat;
 	background-size: contain;
 	display: inline-block;
 	vertical-align: top;
@@ -94,7 +94,7 @@
 	}
 }
 
-.currency-selector{
+.currency-selector.header{
 	display: none;
 }
 
@@ -115,7 +115,7 @@
 		display: block;
 	}
 	.user-wishlist {
-		background-image: url("images/IndividualIconsPage_WhiteOutline_Heart.png");
+		background-image: url("assets/IndividualIconsPage_WhiteOutline_Heart.png");
 		height: 20px;
 		width: 24px;
 		@include media('<tablet') {
@@ -123,12 +123,12 @@
 		}
 	}
 	.user-profile {
-		background-image: url("images/IndividualIconsPage_WhiteOutline_My-Profile.png");
+		background-image: url("assets/IndividualIconsPage_WhiteOutline_My-Profile.png");
 		height: 20px;
 		width: 19px;
 	}
 	.user-cart {
-		background-image: url("images/IndividualIconsPage_WhiteOutline_Shopping-bag.png");
+		background-image: url("assets/IndividualIconsPage_WhiteOutline_Shopping-bag.png");
 		height: 20px;
 		width: 20px;
 	}

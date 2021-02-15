@@ -24,6 +24,7 @@ function initSlick() {
 			}
 		]
 	});
+	
 	$('.js-gallery-slider').slick({
 		// slidesToShow: 6,
 		// slidesToScroll: 6,
@@ -42,6 +43,11 @@ function initSlick() {
 		]
 	});
 	
+	$('.js-filters-slider').slick({
+		arrows: false,
+		infinite: false,
+		variableWidth: true
+	});
 }
 
 $('form').on('click', 'button:not([type="submit"])', function(e){

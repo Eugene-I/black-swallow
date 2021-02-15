@@ -4,23 +4,23 @@ let path_source = "src/",
 		src: {
 			html: path_source,
 			css: path_source + 'scss/',
-			js: path_source + 'js/',
-			images: path_source + 'images/',
-			fonts: path_source + 'fonts/'
+			js: path_source + 'assets/',
+			images: path_source + 'assets/',
+			fonts: path_source + 'assets/'
 		},
 		watch: {
 			html: path_source + '**/*.pug',
 			css: path_source + 'scss/**/*.scss',
-			js: path_source + 'js/**/*.js',
-			images: path_source + 'images/*',
-			fonts: path_source + 'fonts/*'
+			js: path_source + 'assets/**/*.js',
+			images: path_source + 'assets/*',
+			fonts: path_source + 'assets/*'
 		},
 		build: {
 			html: path_dist,
 			css: path_dist,
-			js: path_dist + 'js/',
-			images: path_dist + 'images/',
-			fonts: path_dist + 'fonts/'
+			js: path_dist + 'assets/',
+			images: path_dist + 'assets/',
+			fonts: path_dist + 'assets/'
 		},
 		clean: "./" + path_dist
 	};

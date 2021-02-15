@@ -100,7 +100,7 @@ input[type="number"] {
 		width: 84px;
 	}
 	button {
-		background: url('images/IndividualIconsPage_WhiteOutline_Plus-black.png') 50% 50% no-repeat;
+		background: url('assets/IndividualIconsPage_WhiteOutline_Plus-black.png') 50% 50% no-repeat;
 		background-size: 50% auto;
 		align-items: center;
 		-webkit-appearance: none;
@@ -129,7 +129,7 @@ input[type="number"] {
 			padding: 3px 3px 4px;
 		}
 		+ button{
-			background-image: url('images/IndividualIconsPage_WhiteOutline_Minus-black.png');
+			background-image: url('assets/IndividualIconsPage_WhiteOutline_Minus-black.png');
 		}
 	}
 }

@@ -1,48 +1,50 @@
-#footer{
+#footer {
 	background: $color-system-black;
 	color: $color-system-white;
 }
 
-.section-newsletter{
-	background: #E6E6E6;
+.section-newsletter {
+	background: #e6e6e6;
 	border-top: 1px solid $color-system-black;
 	color: $color-system-black;
 	padding: 20px 0 30px;
 	text-align: center;
-	> .container{
-		@include media('>=tablet') {
+	> .container {
+		@include media(">=tablet") {
 			max-width: 660px;
 		}
 	}
-	.icon{
+	.icon {
 		display: block;
 		margin: 0 auto 23px;
 	}
-	h2{
+	h2 {
 		margin: 0 0 10px;
 	}
-	p{
+	p {
 		margin: 0 0 23px;
 	}
 }
 
-.form-newsletter{
+.form-newsletter {
 	display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-	.btn{
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+	.btn {
 		border-left-width: 0;
 		min-width: 96px;
 	}
 }
 
-.section-socials-icons{
+.section-socials-icons {
 	// border-bottom: 2px solid $color-system-white;
+	font-size: 0;
+	line-height: 0;
 	padding: 10px 0 11px;
-	ul{
+	ul {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -50,16 +52,30 @@
 		align-content: center;
 		align-items: center;
 		@extend %listreset;
-		li{
+		li {
 			padding: 0 10px;
 		}
 	}
 }
 
-.section-footer-content{
+.section-footer-content {
 	background: $color-system-white;
 	color: $color-system-black;
-	.bottom-content{
+	@include media(">=tablet") {
+		background: $color-system-black;
+		color: $color-system-white;
+	}
+	.content-holder {
+		@include media(">=tablet") {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: space-between;
+			align-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+	.bottom-content {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: nowrap;
@@ -70,20 +86,81 @@
 	}
 }
 
-.payments-method-list{
+.footer-nav {
+	color: $color-system-white;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
+	text-transform: uppercase;
+	@include media(">=tablet") {
+		display: flex;
+	}
+	@extend %listreset;
+
+	> li {
+		width: 25%;
+	}
+	a {
+		color: inherit;
+	}
+	ul {
+		text-transform: none;
+		@extend %listreset;
+	}
+}
+
+.footer-payment-block {
+	> div {
+		@include media(">=tablet") {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: flex-start;
+			align-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+	.currency-selector {
+		display: none;
+		@include media(">=tablet") {
+			display: block;
+		}
+	}
+}
+
+.payments-method-list {
 	display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
 	padding: 10px 0 11px;
 	@extend %listreset;
-	li{
+	&.large {
+		display: none;
+		@include media(">=tablet") {
+			display: flex;
+		}
+		li {
+			padding: 12px;
+			width: 50%;
+		}
+		a {
+			border: 1px solid #979797;
+			border-radius: 0;
+			height: auto;
+			width: auto;
+		}
+	}
+	li {
 		padding: 2px;
 	}
-	a{
-		background: #B3B3B3;
+	a {
+		background: #b3b3b3;
 		border-radius: 7px;
 		display: inline-block;
 		vertical-align: top;
@@ -92,25 +169,25 @@
 	}
 }
 
-.copy{
+.copy {
 	margin: 0;
 	text-transform: uppercase;
 }
 
-.footer-nav{
+.footer-bottom-nav {
 	display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	align-items: flex-start;
 	// text-transform: uppercase;
 	@extend %listreset;
-	li{
+	li {
 		margin: 0 0 0 4px;
 		padding: 0 0 0 4px;
 		position: relative;
-		&:first-child{
+		&:first-child {
 			margin: 0;
 			padding: 0;
 			&:before {
@@ -119,7 +196,7 @@
 		}
 		&:before {
 			background: $color-system-black;
-			content: '';
+			content: "";
 			height: 6px;
 			left: 0;
 			position: absolute;
@@ -128,7 +205,8 @@
 			width: 1px;
 		}
 	}
-	a{
+	a {
+		color: inherit;
 		text-decoration: none;
 	}
 }
